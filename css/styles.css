@@ -1,0 +1,171 @@
+* {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 12px;
+}
+
+body {
+	background: linear-gradient(
+		to bottom,
+		hsl(273, 75%, 66%),
+		hsl(240, 73%, 65%)
+	);
+}
+
+.container {
+	width: inherit;
+	position: relative;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	padding: 6%;
+	overflow: hidden;
+	box-shadow: 5px 12px 20px rgba(29, 30, 53, 0.2);
+}
+
+.wrapper {
+	display: block;
+	margin: 15% auto;
+	position: relative;
+	margin: 10% auto;
+	width: 75rem;
+}
+
+.text {
+	transition: 0.5s ease-in;
+	padding: 0 5% 0 0;
+	border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq-wrapper {
+	margin-top: 70px;
+	position: absolute;
+	left: 450px;
+	top: 20px;
+	width: 45%;
+	height: 30rem;
+	overflow-y: auto;
+}
+
+.faq-wrapper h3 {
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+	color: hsl(237, 12%, 33%);
+}
+
+.faq-wrapper p {
+	display: none;
+	color: hsl(240, 6%, 50%);
+}
+
+.faq-wrapper h1 {
+	margin: 0;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.img-wrapper {
+	position: relative;
+	left: -80px;
+}
+
+.arrow-down {
+	transition: 0.2s ease-out;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+.title-text {
+	position: relative;
+}
+
+.box-img {
+	z-index: 2;
+	position: absolute;
+	top: 170px;
+	left: -80px;
+}
+
+.mobile-img-woman {
+	display: none;
+}
+
+.bg-img {
+	position: absolute;
+	top: -350px;
+	left: -450px;
+}
+
+.mobile-img-bg {
+	display: none;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 94%, 86%);
+}
+
+@media (max-width: 1440px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		border-radius: 10px;
+		width: 30rem;
+		background-color: rgb(255, 255, 255);
+		padding: 6%;
+		overflow: visible;
+	}
+
+	.faq-wrapper {
+		position: relative;
+		width: 80%;
+		padding: 5%;
+		top: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	.bg-img,
+	.box-img,
+	.woman-img {
+		display: none;
+	}
+
+	.text h3 {
+		padding-right: 5px;
+	}
+
+	.text {
+		padding-right: 0;
+	}
+
+	.mobile-img-bg {
+		top: -160px;
+		right: -210px;
+		position: absolute;
+		display: block;
+		transform: rotate(-1deg);
+	}
+
+	.mobile-img-woman {
+		transform: rotate(-1deg);
+		display: block;
+		z-index: 2;
+		position: absolute;
+		top: -270px;
+		right: -210px;
+	}
+
+	.img-wrapper {
+		margin: 100px auto 0;
+		margin-bottom: 0;
+		position: relative;
+	}
+}
